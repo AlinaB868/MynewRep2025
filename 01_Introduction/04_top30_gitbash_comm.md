@@ -1,36 +1,128 @@
-Creating and Using a Git Repository (Fun Example)
-This guide walks you through creating a Git repository, cloning it locally, adding a project structure based on a fun movie theme, and pushing your first commit to GitHub.
+ Top 30 Most Commonly Used Git Bash Commands
+This document provides a list of the 30 most frequently used Git Bash (or general Unix/Linux shell) commands, each with a brief description and a relevant usage example.
 
-1. Create a New Repository on GitHub
-Go to GitHub and log in.
-Click the "+" icon in the top right corner and select "New repository".
-Give your repository a name, e.g., interstellar-mission.
-(Optional) Add a description: Space mission logs and data from the Interstellar crew.
-Leave it public or private depending on your preference.
-Do not initialize with a README (we'll do it manually).
-Click "Create repository".
-2. Clone the Repository Locally
-Open Git Bash and run:
+1. pwd – Print Working Directory
+Displays the current working directory.
 
-git clone https://github.com/your-username/interstellar-mission.git
-cd interstellar-mission
-3. Create Folders and Files
-Let's simulate a space mission folder structure inspired by the movie Interstellar:
+$ pwd
+/c/Users/student/projects
+2. ls – List Directory Contents
+Lists files and directories.
 
-mkdir -p crew_logs/coop
-mkdir -p crew_logs/brand
-mkdir -p robots/tars
-mkdir -p mission_data/gargantua
+$ ls
+Documents  Downloads  script.sh
+3. ls -la – List All with Details
+Lists all files, including hidden ones, with detailed information.
 
-touch README.md
-echo "# Interstellar Mission Logs" > README.md
+$ ls -la
+-rw-r--r--  1 user user   0 Aug 6 10:00 .gitignore
+4. cd – Change Directory
+Navigates into a directory.
 
-echo "Cooper's log: Black hole approach imminent..." > crew_logs/coop/log1.txt
-echo "Brand's log: Analyzing planet surface..." > crew_logs/brand/log1.txt
-echo "TARS diagnostics: 95% operational" > robots/tars/status.txt
-echo "Data collected from Gargantua gravity readings." > mission_data/gargantua/blackhole.txt
-4. Stage and Commit the Files
-git add .
-git commit -m "Initial commit with Interstellar mission structure"
-5. Push to GitHub
-git push origin main
+$ cd Documents
+5. cd .. – Go Up One Directory
+Moves one level up in the directory structure.
+
+$ cd ..
+6. mkdir – Make Directory
+Creates a new directory.
+
+$ mkdir new_project
+7. touch – Create New File
+Creates an empty file.
+
+$ touch notes.txt
+8. rm – Remove File
+Deletes a file.
+
+$ rm old_script.sh
+9. rm -r – Remove Directory Recursively
+Deletes a directory and all its contents.
+
+$ rm -r temp_folder
+10. cp – Copy File or Directory
+Copies files or directories.
+
+$ cp file.txt backup.txt
+11. mv – Move or Rename
+Moves or renames files or directories.
+
+$ mv report.txt archive/
+12. cat – Concatenate and Display File Content
+Displays file content.
+
+$ cat README.md
+13. echo – Display a Line of Text
+Prints a string to the terminal.
+
+$ echo "Hello, world!"
+14. clear – Clear Terminal
+Clears the terminal screen.
+
+$ clear
+15. history – Show Command History
+Displays the command history.
+
+$ history
+16. man – Manual Pages
+Shows the manual/help for a command.
+
+$ man ls
+17. grep – Search Text
+Searches for text in files.
+
+$ grep "error" log.txt
+18. find – Find Files
+Searches for files and directories.
+
+$ find . -name "*.sh"
+19. chmod – Change Permissions
+Changes file permissions.
+
+$ chmod +x script.sh
+20. chown – Change Ownership
+Changes the owner of a file.
+
+$ sudo chown user:user file.txt
+21. stat – File Information
+Displays detailed info about a file.
+
+$ stat notes.txt
+22. basename – Get Filename from Path
+Extracts the filename from a path.
+
+$ basename /path/to/file.txt
+file.txt
+23. dirname – Get Directory from Path
+Extracts the directory part of a path.
+
+$ dirname /path/to/file.txt
+/path/to
+24. diff – Compare Files
+Shows differences between two files.
+
+$ diff old.txt new.txt
+25. head – First Lines of File
+Displays the first 10 lines of a file.
+
+$ head data.csv
+26. tail – Last Lines of File
+Displays the last 10 lines of a file.
+
+$ tail logs.txt
+27. wget – Download from Web
+Downloads files from the internet.
+
+$ wget https://example.com/file.zip
+28. tar – Archive Files
+Creates or extracts .tar archives.
+
+$ tar -czvf archive.tar.gz folder/
+29. uname – System Info
+Displays system information.
+
+$ uname -a
+30. exit – Close Terminal Session
+Closes the current terminal session.
+
+$ exit
