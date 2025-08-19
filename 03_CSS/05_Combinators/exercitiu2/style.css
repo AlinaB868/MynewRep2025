@@ -1,0 +1,16 @@
+div ~ p {
+  color: red;
+}
+
+div + p {
+  color: blue;
+}
+h2 + p {
+  color: green;
+}
+h2 ~ div + p {
+  color: orange;
+}
+span + p {
+  color: orange;
+}
