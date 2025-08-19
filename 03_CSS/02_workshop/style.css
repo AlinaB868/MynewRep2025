@@ -1,0 +1,37 @@
+h1 {
+  color: blueviolet;
+  background-color: aquamarine;
+}
+p {
+  color: lime;
+  background-color: dimgray;
+}
+thead {
+  color: rgb(230, 18, 18);
+  background-color: lightseagreen;
+}
+tbody {
+  color: black;
+  background-color: blueviolet;
+  width: 300;
+}
+label {
+  color: brown;
+  width: fit-content;
+  background-color: aquamarine;
+}
+input {
+  color: aquamarine;
+  border-radius: 50px;
+  background-color: aquamarine;
+}
+button {
+  color: coral;
+  background-color: blueviolet;
+  border-radius: 20px;
+}
+div {
+  color: aquamarine;
+  width: 300px;
+  margin: auto;
+}

@@ -1,0 +1,17 @@
+h2 {
+  color: blue;
+}
+.text-blue {
+  color: red;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+#unaltp {
+  color: green;
+}
