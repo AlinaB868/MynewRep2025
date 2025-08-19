@@ -1,0 +1,12 @@
+#container {
+  background-color: grey;
+}
+.red {
+  color: red;
+}
+span {
+  color: red;
+}
+a {
+  color: green;
+}
