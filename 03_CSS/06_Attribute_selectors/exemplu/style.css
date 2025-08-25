@@ -16,3 +16,7 @@
 [data-action*="delete"] {
   color: red;
 }
+
+[class~="error"] {
+  color: palevioletred;
+}

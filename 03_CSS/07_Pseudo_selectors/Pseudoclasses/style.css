@@ -1,0 +1,25 @@
+ul > li:first-child {
+  color: red;
+}
+
+ul > li:last-child {
+  color: blue;
+}
+
+ul > li:nth-child(2) {
+  color: aqua;
+}
+
+table > tbody > tr:nth-child(2n + 1) {
+  color: mediumseagreen;
+}
+table > tbody > tr:nth-child(2n) {
+  color: blue;
+}
+table > thead > tr:first-child {
+  background-color: aqua;
+}
+
+table > thead > tr > th:first-child {
+  background-color: rgb(222, 58, 198);
+}
