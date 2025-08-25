@@ -1,0 +1,18 @@
+[target] {
+  color: red;
+}
+
+[type="text"] {
+  color: green;
+}
+
+[href^="https"] {
+  color: blue;
+}
+
+[href$="pdf"] {
+  color: darkblue;
+}
+[data-action*="delete"] {
+  color: red;
+}

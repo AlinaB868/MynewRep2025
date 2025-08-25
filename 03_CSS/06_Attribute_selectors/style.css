@@ -1,0 +1,13 @@
+[href] {
+  color: brown;
+}
+[href^="http"] {
+  color: blue;
+}
+
+[href$="com"] {
+  color: green;
+}
+[href*="e"] {
+  color: pink;
+}
