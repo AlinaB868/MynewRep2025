@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Pig {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.head {
+  width: 360px;
+  height: 360px;
+  background-color: pink;
+  border: 12px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.ear {
+  width: 90px;
+  height: 90px;
+  background-color: pink;
+  border: 12px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.ear.left {
+  left: 20px;
+}
+
+.ear.right {
+  right: 20px;
+}
+
+.eye {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+}
+
+.eye.left {
+  left: 60px;
+}
+
+.eye.right {
+  right: 60px;
+}
+
+.pupil {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.nose {
+  width: 200px;
+  height: 90px; /* Mai înalt */
+  background-color: #f56a7a;
+  border: 3px solid black;
+  border-radius: 50% 50% 40% 40%;
+  position: absolute;
+  bottom: 60px; /* Mai sus */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nostril {
+  width: 30px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nostril.left {
+  margin-right: 10px;
+}
+
+.nostril.right {
+  margin-left: 10px;
+}
