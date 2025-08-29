@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(23, 23, 23);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 25vw;
+  margin: auto;
+  gap: 40px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: Georgia, serif;
+}
+
+label {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: small;
+}
+
+.btn {
+  color: rgb(7, 7, 7);
+  background-color: white;
+  width: 25vw;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 550;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  height: 80vh;
+  width: 40vw;
+  margin: auto;
+  gap: 40px;
+  font-family: "IM Fell English", serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 100px;
+}
+
+p {
+  width: 320px;
+}
+.underline {
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+}
