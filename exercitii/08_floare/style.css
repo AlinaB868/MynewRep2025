@@ -1,8 +1,19 @@
-.flower {
+body {
+  background-color: rgb(162, 161, 159);
+}
+.flower-rotate {
   position: relative;
   width: 400px;
+  height: 700px;
+  margin: auto;
+}
+.flower {
+  width: 400px;
   height: 400px;
-  margin: 100px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate-flower 20s linear infinite;
 }
 
 .center {
@@ -19,40 +30,73 @@
 [class^="petal"] {
   width: 100px;
   height: 100px;
-  background-color: pink;
+  background-color: rgb(233, 48, 79);
   border-radius: 50%;
   position: absolute;
-  /* Cheia: transform pentru centrare */
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  z-index: 1;
 }
 
-/* Poziționare petale */
 .petal1 {
-  top: 40%;
-  left: 80%;
-}
-.petal2 {
-  top: 25%;
+  top: 27%;
   left: 60%;
 }
+.petal2 {
+  top: 52%;
+  left: 59%;
+}
 .petal3 {
-  top: 25%;
+  top: 12%;
   left: 40%;
 }
 .petal4 {
-  top: 40%;
-  left: 20%;
+  top: 62%;
+  left: 35%;
 }
 .petal5 {
-  top: 60%;
-  left: 20%;
+  top: 47%;
+  left: 13%;
 }
 .petal6 {
-  top: 75%;
-  left: 40%;
+  top: 22%;
+  left: 17%;
 }
-.petal7 {
-  top: 75%;
-  left: 60%;
+
+.stem {
+  position: absolute;
+  background-color: green;
+  border-radius: 10% 70% 40% 80%;
+  height: 370px;
+  width: 10px;
+  top: 250px;
+  left: 220px;
+  z-index: 0;
+}
+
+.leaf {
+  position: absolute;
+  background-color: green;
+  border-radius: 100% 10% 90% 10%;
+  height: 200px;
+  width: 70px;
+  top: 330px;
+  left: 220px;
+  z-index: 0;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .flower {
+    display: block;
+  }
+}
+
+@keyframes rotate-flower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
