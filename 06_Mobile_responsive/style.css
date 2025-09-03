@@ -1,0 +1,50 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(181, 181, 244);
+}
+h1 {
+  display: none;
+  font-size: 100px;
+  color: white;
+}
+
+@media (min-width: 1201px) {
+  body {
+    background-color: pink;
+  }
+
+  #widescreen > h1 {
+    display: block;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  body {
+    background-color: rgb(237, 174, 129);
+  }
+
+  #laptop > h1 {
+    display: block;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  body {
+    background-color: rgb(158, 254, 124);
+  }
+
+  #tablet > h1 {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: rgb(181, 92, 92);
+  }
+
+  #phone > h1 {
+    display: block;
+  }
+}
