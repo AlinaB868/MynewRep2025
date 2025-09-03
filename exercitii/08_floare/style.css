@@ -1,0 +1,58 @@
+.flower {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+}
+
+.center {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  z-index: 1;
+}
+
+[class^="petal"] {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  /* Cheia: transform pentru centrare */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Poziționare petale */
+.petal1 {
+  top: 40%;
+  left: 80%;
+}
+.petal2 {
+  top: 25%;
+  left: 60%;
+}
+.petal3 {
+  top: 25%;
+  left: 40%;
+}
+.petal4 {
+  top: 40%;
+  left: 20%;
+}
+.petal5 {
+  top: 60%;
+  left: 20%;
+}
+.petal6 {
+  top: 75%;
+  left: 40%;
+}
+.petal7 {
+  top: 75%;
+  left: 60%;
+}
