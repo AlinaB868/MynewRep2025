@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "one one two two two two two two"
+    "one one three three three four four four"
+    "five five six six six six seven seven"
+    "eight eight six six six six seven seven";
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+  gap: 10px;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 2fr 1fr;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    gap: 15px;
+  }
+}
+#one {
+  grid-area: one;
+  background-color: red;
+}
+
+#two {
+  grid-area: two;
+  background-color: burlywood;
+}
+
+#three {
+  grid-area: three;
+  background-color: rgb(99, 213, 171);
+}
+
+#four {
+  grid-area: four;
+  background-color: blue;
+}
+
+#five {
+  grid-area: five;
+  background-color: green;
+}
+
+#six {
+  grid-area: six;
+  background-color: orange;
+}
+
+#seven {
+  grid-area: seven;
+  background-color: purple;
+}
+
+#eight {
+  grid-area: eight;
+  background-color: pink;
+}
