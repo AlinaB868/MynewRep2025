@@ -1,0 +1,89 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stil pentru primul input și buton */
+#my-input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Containerul principal */
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Titlul formularului */
+.container h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+/* Grupuri de inputuri */
+.container div {
+  margin-bottom: 15px;
+}
+
+/* Etichetele */
+.container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Câmpurile input */
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Butonul din formular */
+.container button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Rezultatul */
+#output {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}

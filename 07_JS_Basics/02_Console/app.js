@@ -1,0 +1,12 @@
+console.log(2);
+console.log("Mama are mere.");
+console.log(1 > 2);
+x = 12789523;
+y = 23458764;
+console.log(x + y);
+console.error("Asta e o eroare");
+x = "Maria";
+y = "15";
+z = "Buna!";
+a = z + " Ma numesc " + x + " si am " + y + " ani.";
+console.log(a);
