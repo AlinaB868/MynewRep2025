@@ -23,3 +23,8 @@ function calculeazaSuma() {
   document.getElementById("output").innerHTML =
     "Suma dintre " + primulNumar + " si " + alDoileaNumar + " este " + suma;
 }
+
+var numbers = [6, 2, 7, 8, 9];
+// 5 elem de la 0-4
+
+console.log(numbers[4]);
