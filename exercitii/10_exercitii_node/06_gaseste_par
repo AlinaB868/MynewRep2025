@@ -1,0 +1,17 @@
+// Verifică dacă există măcar un număr par în array.
+function f(arr) {
+  var par = false;
+  for (var i = 0; i <= arr.length - 1; i++) {
+    if (arr[i] % 2 == 0) {
+      par = true;
+      console.log("Exista un numar par");
+      break;
+    }
+  }
+
+  if (!par) {
+    console.log("Nu am gasit numere pare");
+  }
+}
+
+f([1, 3, 5, 9, 7]);
