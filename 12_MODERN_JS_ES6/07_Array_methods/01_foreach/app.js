@@ -8,3 +8,13 @@
 // });
 
 // TODO: Add your forEach examples here
+
+const fruits = ["apple", "banana", "orange"];
+fruits.forEach((fruit, index) => {
+  console.log(`${index}: ${fruit}`);
+});
+
+const numbers = [10, 20, 30, 40];
+numbers.forEach((numbers) => {
+  console.log(`${numbers}`);
+});

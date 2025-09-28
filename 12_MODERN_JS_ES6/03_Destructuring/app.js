@@ -63,3 +63,16 @@ const afiseazaNote = ([n1, n2, n3]) => {
 };
 
 console.log(afiseazaNote([7, 9, 10]));
+
+const data = { id: 1, user: { firstName: "Elena", lastName: "Popa" } };
+const {
+  id,
+  user: { firstName, lastName },
+} = data;
+console.log(firstName, id);
+
+function createMessage({ nameB, id }) {
+  return `Salut, ma numesc ${nameB} si userul meu este ${id}`;
+}
+const user2 = { nameB: "Adi", id: 1234, age: 20 };
+console.log(createMessage(user2));
